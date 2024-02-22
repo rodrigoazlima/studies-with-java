@@ -1,6 +1,6 @@
 package dev.rodrigoazlima.study.designpatterns.memento.history;
 
-public class TestMemento {
+public class RunMemento {
 
     public static void main(final String... args) {
         final Memento<String> memento = new Memento<>();

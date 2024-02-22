@@ -3,7 +3,7 @@ package dev.rodrigoazlima.study.designpatterns.memento.text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Caretaker {
+public class RunMemento {
     public static void main(String[] args) {
         List<Memento> savedStates = new ArrayList<>();
 
