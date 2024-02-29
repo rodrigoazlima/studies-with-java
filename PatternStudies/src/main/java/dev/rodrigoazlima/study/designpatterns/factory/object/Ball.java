@@ -1,27 +1,19 @@
 package dev.rodrigoazlima.study.designpatterns.factory.object;
 
-public class Ball extends IObject {
-    private String cpf;
-    private Double tuitionPrice;
+public class Ball implements IObject {
+    private Double weigh;
 
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public Double getTuitionPrice() {
-        return tuitionPrice;
-    }
-
-    public void setTuitionPrice(Double tuitionPrice) {
-        this.tuitionPrice = tuitionPrice;
+    public void setWeigh(Double weigh) {
+        this.weigh = weigh;
     }
 
     @Override
-    public String getDescription() {
-        return getName() + " (" + getAge() + "years) Student with CPF " + getCpf();
+    public String getWeigh() {
+        return String.valueOf(weigh);
+    }
+
+    @Override
+    public String print() {
+        return " Ball with  " + getWeigh();
     }
 }

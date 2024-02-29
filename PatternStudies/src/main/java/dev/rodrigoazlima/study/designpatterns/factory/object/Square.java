@@ -1,27 +1,19 @@
 package dev.rodrigoazlima.study.designpatterns.factory.object;
 
-public class Square extends IObject {
-    private String discipline;
-    private Double salary;
+public class Square implements IObject {
+    private Double weigh;
 
-    public String getDiscipline() {
-        return discipline;
-    }
-
-    public void setDiscipline(String discipline) {
-        this.discipline = discipline;
-    }
-
-    public Double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(Double salary) {
-        this.salary = salary;
+    public void setWeigh(Double weigh) {
+        this.weigh = weigh;
     }
 
     @Override
-    public String getDescription() {
-        return getName() + " (" + getAge() + "years) Professor of " + getDiscipline();
+    public String getWeigh() {
+        return String.valueOf(weigh);
+    }
+
+    @Override
+    public String print() {
+        return " Square with  " + getWeigh();
     }
 }
